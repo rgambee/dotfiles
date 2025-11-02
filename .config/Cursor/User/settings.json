@@ -1,0 +1,86 @@
+{
+    "window.commandCenter": 1,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "cmake.options.statusBarVisibility": "compact",
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "packagePreset": {
+            "statusBarVisibility": "hidden"
+        },
+        "workflow": {
+            "statusBarVisibility": "hidden"
+        },
+        "workflowPreset": {
+            "statusBarVisibility": "hidden"
+        }
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "cmake.configureOnEdit": false,
+    "cmake.ctest.allowParallelJobs": true,
+    "cmake.parallelJobs": 8,
+    "cmake.generator": "Ninja",
+    "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+    "cmake.configureOnOpen": false,
+    "cmake.ctestArgs": [
+        "--progress",
+        "--output-on-failure"
+    ],
+    "cmake.showOptionsMovedNotification": false,
+    "git.openRepositoryInParentFolders": "always",
+    "sonarlint.disableTelemetry": true,
+    "cSpell.userWords": [
+        "firmwares",
+        "Formlabs",
+        "Mosquitto",
+        "timelapse"
+    ],
+    "editor.fontSize": 10,
+    "editor.cursorStyle": "line-thin",
+    "editor.rulers": [
+        80,
+        88,
+        120
+    ],
+    "editor.minimap.autohide": true,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "[plaintext]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false
+    },
+    "cSpell.checkOnlyEnabledFileTypes": false,
+    "cSpell.enabled": true,
+    "latex-workshop.bibtex-format.trailingComma": true,
+    "gitlens.telemetry.enabled": false,
+    "cmake.automaticReconfigure": false,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontSize": 12,
+    "editor.largeFileOptimizations": false,
+    "cursor.cpp.disabledLanguages": [
+        "taskapps",
+        "untitled",
+        "markdown"
+    ],
+    "output.smartScroll.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "files.watcherExclude": {
+        "**/build/**": true
+    },
+    "eslint.rules.customizations": []
+}
