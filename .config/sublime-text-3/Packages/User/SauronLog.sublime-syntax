@@ -1,0 +1,41 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: Sauron Log
+first_line_match: '^(DEBUG|INFO|WARN|ERROR) [0-9T:.-]{23} \w+\.(cpp|h):\d+.*'
+scope: text.sauron-log
+contexts:
+  main:
+    - match: '^(DEBUG) ([0-9T:.-]{23}) ([\w/-]+\.(cpp|h|qml):\d+) (\[[\w()>.-]*\]) (.*)'
+      captures:
+        1: comment.line           # DEBUG
+        2: string.quoted.other    # Timestamp
+        3: keyword.control        # Filename + line number
+        5: variable.function      # Function name
+        6: comment.line           # Message
+
+    - match: '^(INFO) ([0-9T:.-]{23}) ([\w/-]+\.(cpp|h|qml):\d+) (\[[\w()>.-]*\])'
+      captures:
+        1: entity.name.function   # INFO
+        2: string.quoted.other    # Timestamp
+        3: keyword.control        # Filename + line number
+        5: variable.function      # Function name
+
+    - match: '^(WARN) ([0-9T:.-]{23}) ([\w/-]+\.(cpp|h|qml):\d+) (\[[\w()>.-]*\]) (.*)'
+      captures:
+        1: entity.name            # WARN
+        2: string.quoted.other    # Timestamp
+        3: keyword.control        # Filename + line number
+        5: variable.function      # Function name
+        6: entity.name            # Message
+
+    - match: '^(ERROR) ([0-9T:.-]{23}) ([\w/-]+\.(cpp|h|qml):\d+) (\[[\w()>.-]*\]) (.*)'
+      captures:
+        1: invalid.illegal        # ERROR
+        2: string.quoted.other    # Timestamp
+        3: keyword.control        # Filename + line number
+        5: variable.function      # Function name
+        6: markup.deleted         # Message
+
+    - match: '\bPR_ERROR\w*\b'
+      scope: markup.deleted

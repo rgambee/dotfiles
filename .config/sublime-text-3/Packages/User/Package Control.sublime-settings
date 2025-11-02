@@ -1,0 +1,13 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"CMake",
+		"Package Control",
+		"Protobuf Syntax Hightlighting",
+		"QML",
+	],
+	"in_process_packages":
+	[
+	],
+}

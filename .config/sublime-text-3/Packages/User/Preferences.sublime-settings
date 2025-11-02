@@ -1,0 +1,55 @@
+{
+	"added_words":
+	[
+		"preload",
+		"formlabs",
+		"json",
+		"convolutional",
+		"accelerometer",
+		"backlight",
+		"unitless",
+		"preprint",
+		"timelapse",
+		"postives",
+		"millijoules",
+		"nanometers",
+		"milliwatts",
+		"irradiance",
+		"oversquish",
+		"precharacteristic",
+		"unintuitive",
+		"hackathon",
+		"fluence",
+		"quantile",
+	],
+	"caret_style": "smooth",
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"detect_indentation": false,
+	"font_size": 8,
+	"open_files_in_new_window": false,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"remember_full_screen": true,
+    "remember_layout": true,
+	"scroll_past_end": true,
+    "show_line_endings": true,
+    "spell_check": true,
+	"tab_size": 4,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+    "always_show_minimap_viewport": true,
+    "highlight_gutter": true,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"ignored_words":
+	[
+		"antialiased",
+		"antialiasing",
+	],
+}

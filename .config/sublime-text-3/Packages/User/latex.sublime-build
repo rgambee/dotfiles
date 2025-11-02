@@ -1,0 +1,5 @@
+{
+    "selector": "source.LaTeX",
+    "cmd": ["pdflatex", "$file"],
+    "working_dir": "$file_path"
+}

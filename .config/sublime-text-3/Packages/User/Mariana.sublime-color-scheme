@@ -1,0 +1,17 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+    "variables":
+    {
+        "foreground_color": "hsl(0, 0%, 85%)",
+        "background_color": "hsl(210, 13%, 15%)",
+    },
+    "globals":
+    {
+        "foreground": "var(foreground_color)",
+        "background": "var(background_color)"
+    },
+    "rules":
+    [
+        
+    ]
+}

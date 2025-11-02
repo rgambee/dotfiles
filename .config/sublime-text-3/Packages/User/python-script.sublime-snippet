@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+#!/usr/bin/env python3
+import argparse
+
+
+def main() -> None:
+	parser = argparse.ArgumentParser(description="")
+	parser.add_argument()
+	args = parser.parse_args()
+
+
+if __name__ == "__main__":
+	main()
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>pys</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python,text.plain</scope>
+    <description>Python Script Template</description>
+</snippet>
