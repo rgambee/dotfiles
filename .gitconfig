@@ -1,0 +1,30 @@
+[core]
+	editor = vim
+	pager = delta
+[user]
+	name = Robert Gambee
+	email = robert@formlabs.com
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+	default = simple
+[pull]
+	ff = only
+[fetch]
+	prune = true
+[rebase]
+	autosquash = true
+[merge]
+	conflictstyle = zdiff3
+[branch]
+	sort = -committerdate
+[interactive]
+	diffFilter = delta --color-only
+[advice]
+	mergeConflict = false
+[delta]
+	navigate = true
+	hyperlinks = true
+	# For VSCode/Cursor IDE
+	hyperlinks-file-link-format = "file://localhost{path}#{line}"
