@@ -1,0 +1,14 @@
+layout tall
+cd ~/code/delphos
+launch
+launch
+launch
+launch
+
+new_tab
+layout grid
+cd ~/Downloads
+launch
+launch
+launch
+launch
