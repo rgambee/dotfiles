@@ -1,0 +1,21 @@
+layout tall
+cd ~/code/mordor
+launch
+launch
+launch
+
+new_tab
+layout grid
+cd ~/Downloads
+launch
+launch
+launch
+launch
+
+new_tab
+layout grid
+cd ~/Downloads
+launch
+launch
+launch
+launch
