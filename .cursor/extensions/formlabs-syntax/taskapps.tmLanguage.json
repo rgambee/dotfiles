@@ -1,0 +1,56 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "taskapps",
+    "patterns": [
+        {
+            "match": "^([0-9:.T-]{23})",
+            "captures": {
+                "1": { "name": "keyword" }
+            }
+        },
+        {
+            "match": "^\\s+([^-\\s][^\\s].*)$",
+            "captures": {
+                "1": { "name": "text.plain" }
+            }
+        },
+        {
+            "match": "(INFO) .*?(?:(Running [Tt]ask|Ending [Tt]ask):? \"(\\w+)\").*?$",
+            "captures": {
+                "1": { "name": "support.class" },
+                "2": { "name": "entity.other.attribute-name" },
+                "3": { "name": "constant.numeric" }
+            }
+        },
+        {
+            "match": "(DEBUG) (.*)$",
+            "captures": {
+                "1": { "name": "comment" },
+                "2": { "name": "comment" }
+            }
+        },
+        {
+            "match": "(INFO) (.*)$",
+            "captures": {
+                "1": { "name": "support.class" },
+                "2": { "name": "text.plain" }
+            }
+        },
+        {
+            "match": "(WARNING) (.*)$",
+            "captures": {
+                "1": { "name": "entity.name.function" },
+                "2": { "name": "entity.name.function" }
+            }
+        },
+        {
+            "match": "(ERROR|CRITICAL) (.*)$",
+            "captures": {
+                "1": { "name": "variable.language" },
+                "2": { "name": "variable.language" }
+            }
+        }
+    ],
+    "repository": {},
+    "scopeName": "text.log"
+}

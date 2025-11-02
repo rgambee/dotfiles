@@ -1,0 +1,42 @@
+{
+	"name": "formlabs-syntax",
+	"displayName": "Formlabs Syntax",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.95.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "taskapps",
+				"aliases": [
+					"Task Apps Log",
+					"taskapps"
+				],
+				"extensions": [
+					".log",
+					".log.1",
+					".log.2",
+					".log.3",
+					".log.4",
+					".log.5"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "taskapps",
+				"scopeName": "text.log",
+				"path": "./syntaxes/taskapps.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"size": 33212
+	}
+}
