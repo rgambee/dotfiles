@@ -1,0 +1,43 @@
+[core]
+	editor = vim
+	pager = delta
+[user]
+	name = Robert Gambee
+	email = robert@futuresearch.ai
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+	default = simple
+[pull]
+	ff = only
+[fetch]
+	prune = true
+[rebase]
+	autosquash = true
+[merge]
+	conflictstyle = zdiff3
+[branch]
+	sort = -committerdate
+[interactive]
+	diffFilter = delta --color-only
+[advice]
+	mergeConflict = false
+	detachedHead = false
+[delta]
+	navigate = true
+	hyperlinks = true
+	hyperlinks-file-link-format = "cursor://file/{path}:{line}"
+[rerere]
+	enabled = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+# Include override config for personal projects
+[includeIf "gitdir:~/code/lab/"]
+	path = ~/code/lab/.gitconfig
+[alias]
+	new = checkout -b
