@@ -1,6 +1,12 @@
 layout tall
 cd ~/code/delphos
+launch lazygit
+
+new_tab
+layout tall
+cd ~/code/delphos
 launch
+focus
 launch
 launch
 launch
