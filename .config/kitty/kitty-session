@@ -1,6 +1,6 @@
 layout tall
 cd ~/code/delphos
-launch lazygit
+launch /opt/homebrew/bin/fish -c "lazygit; fish"
 
 new_tab
 layout tall
