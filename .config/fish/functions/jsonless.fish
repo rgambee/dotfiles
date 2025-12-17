@@ -1,3 +1,3 @@
 function jsonless
-    jq . $argv | moor
+    jq -C . $argv | moor
 end
