@@ -12,6 +12,14 @@ launch
 launch
 
 new_tab
+layout tall
+cd ~/code/everyrow-sdk
+launch
+focus
+launch
+launch
+
+new_tab
 layout grid
 cd ~/Downloads
 launch
