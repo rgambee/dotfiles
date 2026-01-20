@@ -41,3 +41,5 @@
 	path = ~/code/lab/.gitconfig
 [alias]
 	new = checkout -b
+[submodule]
+	recurse = true
