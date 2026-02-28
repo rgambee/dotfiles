@@ -1,3 +1,3 @@
 function trash
-     mv -n $argv ~/.Trash
+     mv -nv $argv ~/.Trash
 end
