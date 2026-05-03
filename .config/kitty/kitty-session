@@ -13,7 +13,7 @@ launch
 
 new_tab
 layout tall
-cd ~/code/everyrow-sdk
+cd ~/Downloads
 launch
 focus
 launch
@@ -21,8 +21,9 @@ launch
 
 new_tab
 layout grid
-cd ~/Downloads
+cd ~/code/lab/mitft/airi-pipelines/
 launch
+focus
 launch
 launch
 launch
