@@ -3,3 +3,7 @@ git:
     - pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="cursor://file/{path}:{line}"
 
   autoStageResolvedConflicts: false
+
+gui:
+  authorColors:
+    "Robert Gambee": "#fa6b05"
