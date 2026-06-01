@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR EDITOR:/usr/bin/vim
 SETUVAR PAGER:/opt/homebrew/bin/moor
+SETUVAR TRUSTED_TOOL_ROOT:/Users/robert/tools
 SETUVAR __fish_git_prompt_shorten_branch_len:10
 SETUVAR __fish_git_prompt_show_informative_status:1
 SETUVAR __fish_git_prompt_showcolorhints:true
