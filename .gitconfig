@@ -27,7 +27,7 @@
 [delta]
 	navigate = true
 	hyperlinks = true
-	hyperlinks-file-link-format = "cursor://file/{path}:{line}"
+	hyperlinks-file-link-format = "code://file/{path}:{line}"
 [rerere]
 	enabled = true
 [filter "lfs"]
