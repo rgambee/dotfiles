@@ -5,6 +5,7 @@ requires-python = ">=3.12"
 dependencies = [
     "mcp-grafana>=0.14.0",
     "postgres-mcp>=0.3.0",
+    "ruff>=0.15.17",
 ]
 
 [tool.uv]
