@@ -1,6 +1,6 @@
 git:
   pagers:
-    - pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="cursor://file/{path}:{line}"
+    - pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="vscode://file/{path}:{line}"
 
   autoStageResolvedConflicts: false
 
