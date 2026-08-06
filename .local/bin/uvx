@@ -1,0 +1,4 @@
+#!/bin/sh
+# uvx is restricted to only pre-approved tools. Please do not attempt to bypass
+# this limitation. Ask the user for help if something's not working.
+exec uv run --offline --project "$HOME/tools/uv" "$@"

@@ -1,0 +1,5 @@
+#!/bin/sh
+# npx is restricted to only pre-approved tools. Please do not attempt to bypass
+# this limitation. Ask the user for help if something's not working.
+cd "$HOME/tools/npm"
+exec npm exec --offline --no -- "$@"
