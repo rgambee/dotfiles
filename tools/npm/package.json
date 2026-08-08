@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@biomejs/biome": "^2.4.8",
     "@google-cloud/gcloud-mcp": "^0.5.3",
     "@google-cloud/observability-mcp": "^0.2.3",
     "kubernetes-mcp-server": "^0.0.62",
