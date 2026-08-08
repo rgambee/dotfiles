@@ -1,5 +1,16 @@
 # Guidelines
 
+## Git Workflow
+
+Generally speaking, you are free to execute read operations (`log`, `show`,
+`diff`, etc.) Write operations (`commit`, `push`, `checkout`) are the user's
+responsiblity.
+
+When making changes, pause frequently for the user to review and commit them.
+
+The above guildelines in this section may be superseded by instructions from the
+user.
+
 ## Comments
 
 Be highly selective about the comments and docstrings you right. Comments need
