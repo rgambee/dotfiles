@@ -1,9 +1,7 @@
 git:
-  pagers:
-    - pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="vscode://file/{path}:{line}"
-
+  diffRenderers:
+    - command: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="vscode://file/{path}:{line}"
   autoStageResolvedConflicts: false
-
 gui:
   authorColors:
     "Robert Gambee": "#fa6b05"
