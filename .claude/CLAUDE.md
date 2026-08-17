@@ -15,6 +15,7 @@ user.
 
 Be highly selective about the comments and docstrings you right. Comments need
 to earn their keep. And an incorrect comment is worse than no comment at all.
+Well-written code is self-documenting.
 
 Avoid the following:
 
@@ -25,6 +26,9 @@ Avoid the following:
 3. Historical, path-dependent comments. Document the current state of the code,
    not how we got here. If this sort of documentation is truly important, it's
    better to put it in a commit message.
+
+Existing comments may violate these rules. That is not license for you to
+violate them.
 
 ## Python Commands and Dependencies
 
