@@ -37,3 +37,9 @@ Use `uv` for all Python commands. Do not use the system's Python interpreter.
 Similarly, use `uv` to install dependencies.
 When inside a project with a `pyproject.toml` file, use `uv add`.
 Otherwise, use `uv --with=<package>`. Never use `pip` directly.
+
+## Scratchpad
+
+Files in the scratchpad are not easily discoverable by the user. Prefer to put
+deliverables in the project folder. When sharing files from the scratchpad,
+include full path so the user can easily open them.
