@@ -132,3 +132,8 @@ alias gcf="git commit --fixup"
 alias grc="git rebase --continue"
 alias gfr="git fetch && git rebase -i origin/master"
 alias gsr="git show REBASE_HEAD"
+
+# For paging though JSONL files
+function jsonless {
+    jq -sC '.[]' $@ | less -R
+}
