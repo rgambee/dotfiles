@@ -2,6 +2,10 @@
   "permissions": {
     "defaultMode": "acceptEdits"
   },
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); raw_dir=$(printf '%s' \"$input\" | jq -r '.cwd'); t=\"$raw_dir\"; while [ \"${t%/}\" != \"$t\" ]; do t=\"${t%/}\"; done; if [ \"$t\" = \"$HOME\" ]; then dir=\"~\"; elif [ -z \"$t\" ]; then dir=\"/\"; else dir=\"${t##*/}\"; fi; branch=$(git --no-optional-locks -C \"$raw_dir\" branch --show-current 2>/dev/null); model=$(printf '%s' \"$input\" | jq -r '.model.id'); effort=$(printf '%s' \"$input\" | jq -r '.effort.level // empty'); ctx=$(printf '%s' \"$input\" | jq -r '.context_window.used_percentage // empty'); out=\"$dir\"; [ -n \"$branch\" ] && out=\"$out ($branch)\"; out=\"$out | $model\"; [ -n \"$effort\" ] && out=\"$out@$effort\"; [ -n \"$ctx\" ] && out=\"$out $(printf '%02.0f' \"$ctx\")%\"; printf '%s' \"$out\""
+  },
   "effortLevel": "xhigh",
   "theme": "dark",
   "preferredNotifChannel": "auto",
