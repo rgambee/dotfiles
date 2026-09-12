@@ -137,3 +137,5 @@ alias gsr="git show REBASE_HEAD"
 function jsonless {
     jq -sC '.[]' $@ | less -R
 }
+
+. "$HOME/.local/bin/env"
