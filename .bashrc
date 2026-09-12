@@ -118,3 +118,17 @@ fi
 
 # Disable XON/XOFF flow control so Ctrl+S doesn't cause terminal to stop receiving input
 stty -ixon
+
+# Git aliases
+alias gs="git status -sb"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gdi="git diff --no-index"
+alias gl="git log --oneline --first-parent"
+alias ga="git add -i"
+alias gap="git add -p"
+alias gca="git commit --amend --no-edit"
+alias gcf="git commit --fixup"
+alias grc="git rebase --continue"
+alias gfr="git fetch && git rebase -i origin/master"
+alias gsr="git show REBASE_HEAD"
