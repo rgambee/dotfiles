@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Disable XON/XOFF flow control so Ctrl+S doesn't cause terminal to stop receiving input
+stty -ixon
