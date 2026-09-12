@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits"
+  },
+  "effortLevel": "xhigh",
+  "theme": "dark",
+  "preferredNotifChannel": "auto",
+  "switchModelsOnFlag": false,
+  "autoContinueAtUsageLimit": false,
+  "remoteControlAtStartup": false
+}
