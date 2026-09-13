@@ -135,7 +135,7 @@ alias gsr="git show REBASE_HEAD"
 
 # For paging though JSONL files
 function jsonless {
-    jq -sC '.[]' $@ | less -R
+    jq -sC '.[]' "$@" | less -R
 }
 
 . "$HOME/.local/bin/env"
