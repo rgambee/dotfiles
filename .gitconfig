@@ -3,3 +3,5 @@
 	email = robertgambee@gmail.com
 [core]
 	editor = vim
+[push]
+	autoSetupRemote = true
