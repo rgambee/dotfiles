@@ -138,4 +138,8 @@ function jsonless {
     jq -sC '.[]' "$@" | less -R
 }
 
+function nxn {
+    npm exec --no -- "$@"
+}
+
 . "$HOME/.local/bin/env"
