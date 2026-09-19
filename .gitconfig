@@ -3,5 +3,12 @@
 	email = robertgambee@gmail.com
 [core]
 	editor = vim
+	pager = delta
 [push]
 	autoSetupRemote = true
+[merge]
+	conflictstyle = zdiff3
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
