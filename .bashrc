@@ -119,6 +119,8 @@ fi
 # Disable XON/XOFF flow control so Ctrl+S doesn't cause terminal to stop receiving input
 stty -ixon
 
+export PAGER="/usr/bin/moor"
+
 # Git aliases
 alias gs="git status -sb"
 alias gd="git diff"
@@ -135,7 +137,7 @@ alias gsr="git show REBASE_HEAD"
 
 # For paging though JSONL files
 function jsonless {
-    jq -sC '.[]' "$@" | less -R
+    jq -sC '.[]' "$@" | moor -R
 }
 
 function nxn {
