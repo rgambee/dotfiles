@@ -4,11 +4,28 @@
 [core]
 	editor = vim
 	pager = delta
-[push]
-	autoSetupRemote = true
+[branch]
+	sort = -committerdate
+[advice]
+	mergeConflict = false
+	detachedHead = false
+[submodule]
+	recurse = true
+[rebase]
+	autosquash = true
 [merge]
 	conflictstyle = zdiff3
+[rerere]
+	enabled = true
+[fetch]
+	prune = true
+[pull]
+	ff = only
+[push]
+	autoSetupRemote = true
 [interactive]
 	diffFilter = delta --color-only
 [delta]
 	navigate = true
+[alias]
+	new = checkout -b
