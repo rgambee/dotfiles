@@ -137,7 +137,7 @@ alias gsr="git show REBASE_HEAD"
 
 # For paging though JSONL files
 function jsonless {
-    jq -sC '.[]' "$@" | moor -R
+    jq -sC '.[]' "$@" | moor
 }
 
 function nxn {
